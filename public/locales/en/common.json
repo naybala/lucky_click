@@ -2,5 +2,9 @@
   "title": "Welcome to the Homepage",
   "language": "Language",
   "english": "English",
-  "myanmar": "Myanmar"
+  "myanmar": "Myanmar",
+  
+  "home": "Home",
+  "tutorial": "Tutorial",
+  "about": "About Us"
 }

@@ -7,6 +7,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.76.1",
+    "axios": "^1.9.0",
     "next": "latest",
     "next-i18next": "latest",
     "react": "latest",

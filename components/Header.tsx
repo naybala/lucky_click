@@ -1,19 +1,17 @@
-import { useRouter } from "next/router";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
-import { useTheme } from "../context/ThemeContext";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
 import ThemeToggle from "./common/ThemeToggle";
+import { LanguageSwitcher } from "./common/LanguageSwitcher";
+import { NavLinks } from "./common/NavLinks";
 
 export default function Header() {
-  const router = useRouter();
-  const { locale, pathname, query, asPath } = router;
   const { t } = useTranslation("common");
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleSidebar = () => setIsOpen(!isOpen);
   const closeSidebar = () => setIsOpen(false);
+  const style: string = "px-3 py-1 border rounded";
 
   return (
     <>
@@ -24,35 +22,8 @@ export default function Header() {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <Link href="/">
-              <button className="px-3 py-1">{t("home")}</button>
-            </Link>
-            <Link href="/">
-              <button className="px-3 py-1">{t("home1")}</button>
-            </Link>
-            <Link href="/">
-              <button className="px-3 py-1">{t("home2")}</button>
-            </Link>
-            <Link href="/">
-              <button className="px-3 py-1">{t("home3")}</button>
-            </Link>
-
-            {locale === "mm" ? (
-              <Link href={{ pathname, query }} as={asPath} locale="en">
-                <button className="px-3 py-1 border rounded">
-                  {t("english")}
-                </button>
-              </Link>
-            ) : (
-              <Link href={{ pathname, query }} as={asPath} locale="mm">
-                <button
-                  className="px-3 py-1 border rounded"
-                  disabled={locale === "mm"}
-                >
-                  {t("myanmar")}
-                </button>
-              </Link>
-            )}
+            <NavLinks className="px-3 py-1" />
+            <LanguageSwitcher className={style} />
             <ThemeToggle />
           </div>
 
