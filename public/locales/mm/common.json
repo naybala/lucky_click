@@ -1,4 +1,5 @@
 {
+  "app-name": "Lucky Click",
   "title": "မူလစာမျက်နှာကိုကြိုဆိုပါတယ်",
   "language": "ဘာသာစကား",
   "english": "အင်္ဂလိပ်",
@@ -7,5 +8,7 @@
   "home": "အိမ်", 
   "tutorial": "ကျူတိုရီရယ်", 
   "about": "ကျွန်ုပ်တို့အကြောင်း",
-  "home-info":"Channel Myanmar App မြန်မာစာတန်းထိုး 4K ရုပ်ရှင်များ၊ ဘောလုံးပွဲများ၊ လက်ဝှေ့နှင့် အခြားအားကစား Live များကို Android TV/Box, Android Phone, Windows PC, iOS, macOS များတွင် လွယ်ကူစွာ ကြည့်ရှုနိုင်ပါပြီ"
+  "home-info":"Channel Myanmar App မြန်မာစာတန်းထိုး 4K ရုပ်ရှင်များ၊ ဘောလုံးပွဲများ၊ လက်ဝှေ့နှင့် အခြားအားကစား Live များကို Android TV/Box, Android Phone, Windows PC, iOS, macOS များတွင် လွယ်ကူစွာ ကြည့်ရှုနိုင်ပါပြီ",
+    "second-header": "Welcome to the Second Header MM"
+
 }

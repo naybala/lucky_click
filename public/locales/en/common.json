@@ -1,4 +1,5 @@
 {
+  "app-name": "Lucky Click",
   "title": "Welcome to the Homepage",
   "language": "Language",
   "english": "English",
@@ -7,5 +8,7 @@
   "home": "Home",
   "tutorial": "Tutorial",
   "about": "About Us",
-  "home-info":"Channel Myanmar App allows you to easily watch 4K movies, football matches, boxing and other sports live with Myanmar subtitles on Android TV/Box, Android Phone, Windows PC, iOS, macOS."
+  "home-info":"Channel Myanmar App allows you to easily watch 4K movies, football matches, boxing and other sports live with Myanmar subtitles on Android TV/Box, Android Phone, Windows PC, iOS, macOS.",
+  
+  "second-header": "Welcome to the Second Header"
 }

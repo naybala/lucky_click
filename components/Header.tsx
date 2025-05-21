@@ -5,6 +5,7 @@ import MobileNav from "./MobileNav";
 import ThemeToggle from "./common/ThemeToggle";
 import { LanguageSwitcher } from "./common/LanguageSwitcher";
 import { NavLinks } from "./common/NavLinks";
+import Logo from "./../public/images/lucky_click.png";
 
 export default function Header() {
   const { t } = useTranslation("common");
@@ -15,10 +16,17 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-white dark:bg-gray-900 text-black dark:text-white shadow p-4">
+      <header className="bg-[#ece7e7f6] dark:bg-[#0f1114f5] text-black dark:text-white shadow p-4 fixed top-0 left-0 w-full z-10">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="text-xl font-bold">
-            <Link href="/">MyLogo</Link>
+            <Link href="/" className="flex items-center">
+              <img
+                src={Logo.src}
+                alt="Lucky Click Logo"
+                className="h-12 w-12 mr-2 rounded-sm shadow-lg"
+              />
+              {t("app-name")}
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center gap-4">
