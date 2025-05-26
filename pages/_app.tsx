@@ -7,16 +7,21 @@ import { useState } from "react";
 import "primereact/resources/themes/lara-light-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
+import { Seo } from "../components/Seo";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </QueryClientProvider>
+    <>
+      {/* Global SEO fallback */}
+      <Seo />
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </QueryClientProvider>
+    </>
   );
 }
 
