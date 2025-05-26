@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       {/* Global SEO fallback */}
-      <Seo />
+      <Seo favicon="/images/lucky_click.png" />
       <QueryClientProvider client={queryClient}>
         <ThemeProvider>
           <Component {...pageProps} />
