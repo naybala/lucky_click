@@ -42,10 +42,10 @@ export default function ourInfo() {
                 </div>
 
                 <p className="text-xl font-semibold dark:text-white">
-                  09 790 605 782
+                  09 763 684 400
                 </p>
                 <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">
-                  Name – Aung Kyaw Hein
+                  Name – Nay Ba La
                 </p>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
                   လတ်မှတ်ကြေးပေးရန် Account
