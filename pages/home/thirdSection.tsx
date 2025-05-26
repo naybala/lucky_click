@@ -86,18 +86,20 @@ export default function ThirdSection() {
 
   return (
     <>
-      <h5 className="text-3xl font-bold mb-12 dark:text-white text-center">
-        {t("second-header")}
-      </h5>
-      <div className="card max-w-7xl mx-auto">
-        <Timeline
-          value={events}
-          align="alternate"
-          className="customized-timeline"
-          marker={customizedMarker}
-          content={customizedContent}
-        />
-      </div>
+      <section id="tutorial" style={{ minHeight: "100vh", paddingTop: "10px" }}>
+        <h5 className="text-3xl font-bold mb-12 dark:text-white text-center">
+          {t("app-tutorial")}
+        </h5>
+        <div className="card max-w-7xl mx-auto">
+          <Timeline
+            value={events}
+            align="alternate"
+            className="customized-timeline"
+            marker={customizedMarker}
+            content={customizedContent}
+          />
+        </div>
+      </section>
     </>
   );
 }

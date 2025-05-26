@@ -40,29 +40,31 @@ export default function HomePage() {
   );
 
   return (
-    <div className="max-w-7xl mx-auto pt-24 px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
-        <div>
-          <h5>{t("home-info")}</h5>
-          <div className="text-center mt-5">
-            <Button
-              label="Info"
-              className="bg-black text-white rounded-lg px-11 py-2 text-center"
-            />
+    <section id="home" style={{ minHeight: "100vh" }}>
+      <div className="max-w-7xl mx-auto pt-24 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
+          <div>
+            <h5>{t("home-info")}</h5>
+            <div className="text-center mt-5">
+              <Button
+                label="Info"
+                className="bg-black text-white rounded-lg px-11 py-2 text-center"
+              />
+            </div>
           </div>
-        </div>
 
-        <Carousel
-          value={items}
-          numVisible={1}
-          numScroll={1}
-          itemTemplate={itemTemplate}
-          className="custom-carousel w-full"
-          circular
-          autoplayInterval={3000}
-          showNavigators={false}
-        />
+          <Carousel
+            value={items}
+            numVisible={1}
+            numScroll={1}
+            itemTemplate={itemTemplate}
+            className="custom-carousel w-full"
+            circular
+            autoplayInterval={3000}
+            showNavigators={false}
+          />
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

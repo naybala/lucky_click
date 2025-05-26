@@ -12,12 +12,22 @@ export const LanguageSwitcher = ({ className }: LanguageSwitcherProps) => {
     <>
       {locale === "mm" ? (
         <Link href={{ pathname, query }} as={asPath} locale="en">
-          <button className={className}>{t("english")}</button>
+          <button className={className}>
+            <img
+              className="w-7 rounded-sm shadow-lg"
+              src="/images/Flag_of_the_United_States.svg.webp"
+              alt="english flag"
+            />
+          </button>
         </Link>
       ) : (
         <Link href={{ pathname, query }} as={asPath} locale="mm">
           <button className={className} disabled={locale === "mm"}>
-            {t("myanmar")}
+            <img
+              className="w-7 rounded-sm shadow-lg"
+              src="/images/Flag_of_Myanmar.svg.png"
+              alt="myanmar flag"
+            />
           </button>
         </Link>
       )}

@@ -64,6 +64,12 @@ body {
   transform: translateX(30px);
 }
 
+button.active {
+  color: #0070f3;
+  border-bottom: 2px solid #0070f3;
+}
+
+
 @media screen and (max-width: 991px) {
   .customized-timeline .p-timeline-event:nth-child(even) {
     flex-direction: row !important;
