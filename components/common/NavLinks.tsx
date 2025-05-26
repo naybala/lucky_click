@@ -6,7 +6,7 @@ export const NavLinks = ({ className = "", onClick }: NavLinksProps) => {
   const { t } = useTranslation("common");
   const [active, setActive] = useState<string>("home");
 
-  const sections = ["home", "tutorial", "our-info"];
+  const sections = ["home", "tutorial", "our-info", "app-ui"];
   const isScrolling = useRef(false);
   const scrollTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -69,6 +69,7 @@ export const NavLinks = ({ className = "", onClick }: NavLinksProps) => {
             handleScrollTo(section);
             onClick?.();
           }}
+          key={section}
         >
           {t(section)}
         </button>

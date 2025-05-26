@@ -12,7 +12,7 @@ interface TimelineEvent {
   image?: string;
 }
 
-export default function ThirdSection() {
+export default function tutorial() {
   const { t } = useTranslation("common");
 
   const events: (TimelineEvent & { index: number })[] = [
@@ -48,8 +48,10 @@ export default function ThirdSection() {
 
   const customizedMarker = (item: TimelineEvent) => {
     return (
-      <span className="flex w-10 h-10 items-center justify-center text-white border-circle z-1 shadow-md">
-        <i className={`${item.icon} text-lg rounded-lg text-black p-2`}></i>
+      <span className="flex w-10 h-10 items-center justify-center  border-circle z-1 shadow-md dark:shadow-white">
+        <i
+          className={`${item.icon} text-lg rounded-lg text-black dark:text-white p-2`}
+        ></i>
       </span>
     );
   };
@@ -58,7 +60,11 @@ export default function ThirdSection() {
     const isEven = item.index % 2 === 0;
 
     return (
-      <Card title={item.status} subTitle={item.date}>
+      <Card
+        title={item.status}
+        subTitle={item.date}
+        className="dark:text-white text-black dark:bg-gray-900 bg-white"
+      >
         <div
           className={`flex flex-col md:flex-row ${
             isEven ? "md:flex-row" : "md:flex-row-reverse"

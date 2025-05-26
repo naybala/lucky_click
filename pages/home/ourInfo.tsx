@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
-export default function SecondSection() {
+export default function ourInfo() {
   const { t } = useTranslation("common");
 
   return (
@@ -13,7 +13,7 @@ export default function SecondSection() {
         <div className="max-w-7xl mx-auto text-center">
           {/* Header */}
           <h5 className="text-3xl font-bold mb-12 dark:text-white">
-            {t("second-header")}
+            {t("our-info")}
           </h5>
 
           <div className="bg-white dark:bg-gray-900 p-10 rounded-lg shadow-lg dark:shadow-gray-700">

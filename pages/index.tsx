@@ -2,9 +2,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
 import Header from "../components/Header";
 import HomePage from "./home/index";
-import SecondSection from "./home/secondSection";
-import ThirdSection from "./home/thirdSection";
+import OurInfo from "./home/ourInfo";
+import Tutorial from "./home/tutorial";
 import Footer from "./home/footer";
+import AppUi from "./home/appUi";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -29,8 +30,10 @@ export default function Home() {
     <div className="bg-gray-100 dark:bg-gray-800 min-h-screen text-black dark:text-white">
       <Header />
       <HomePage />
-      <ThirdSection />
-      <SecondSection />
+      <Tutorial />
+      <OurInfo />
+      <AppUi />
+      <br />
       <br />
       <Footer />
     </div>
